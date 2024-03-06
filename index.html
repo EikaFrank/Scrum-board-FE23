@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrum Board</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>Scrum Board</h1> 
+    <form id="form">
+      <input type="text" id="task" placeholder="Task" />
+      <input type="text" id="assigned" placeholder="Assign" />
+      <select id="devArea">
+        <option value="ux" class="ux">UX</option>
+        <option value="dev-frontend" class="dev-frontend">Dev Frontend</option>
+        <option value="dev-backend" class="dev-backend">Dev Backend</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+    <div id="colorScheme">
+      <div class="color-item ux">UX</div>
+      <div class="color-item dev-frontend">Dev Frontend</div>
+      <div class="color-item dev-backend">Dev Backend</div>
+    </div>
+    <div id="container">
+      <div class="column">
+        <h2>To Do</h2>
+        <div id="todoList"></div> 
+      </div>
+      <div class="column">
+        <h2>In Progress</h2>
+        <div id="inProgressList"></div>
+      </div>
+      <div class="column">
+        <h2>Done</h2>
+        <div id="doneList"></div>
+      </div>
+    </div>
+  </body>
+</html>
